@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Themes Store</title>
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+                    },
+                    backdropBlur: {
+                        'glass': '4px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass-effect {
+                @apply bg-white/10 backdrop-blur-glass shadow-glass border border-white/20 rounded-xl;
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .bg-gradient-overlay {
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+            }
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/01910b438aed49d0a7c36a96efb3df22.jpg~tplv-a9rns2rl98-24:720:720.image?lk3s=8e244e95&rcl=202603071736279E82E85D0897FE5A236E&rrcfp=8a172a1a&x-expires=1773480987&x-signature=f6S3IITO5HldVL7oeEVBVwKiUsg%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        .theme-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .theme-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .theme-card .card-content {
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+        
+        .theme-card:hover .card-content {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <!-- Header Section -->
+    <header class="relative py-8 px-4 md:px-8 text-center z-10">
+        <div class="glass-effect inline-block px-8 py-4" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-shadow bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                UTS Themes Store
+            </h1>
+            <p class="mt-2 text-lg text-blue-200 opacity-80">探索精美主题，个性化您的设备</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 relative z-10">
+        <!-- Themes Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Theme Card 1 -->
+            <div class="theme-card rounded-2xl overflow-hidden shadow-xl card-hover relative" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://pan.quark.cn/s/e0c9cda57416" target="_blank" class="block">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/9d8ed5f8e9104a57ba26a1ca728886de.jpg~tplv-a9rns2rl98-24:720:720.image?lk3s=8e244e95&rcl=202603071736279E82E85D0897FE5A236E&rrcfp=8a172a1a&x-expires=1773480987&x-signature=xVj%2FggUbeN8dqqnLWwh%2F2REiU7k%3D" 
+                             alt="nova15动感绿" 
+                             class="w-full h-auto object-cover rounded-t-2xl">
+                        <div class="absolute inset-0 bg-gradient-overlay opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="glass-effect p-6 text-center">
+                        <h3 class="text-xl font-bold text-green-300">nova15动感绿</h3>
+                        <p class="mt-2 text-sm text-blue-100 opacity-80">点击下载主题</p>
+                        <div class="mt-4 inline-block bg-green-500/20 hover:bg-green-500/30 text-green-300 px-4 py-2 rounded-full text-sm transition-colors duration-300">
+                            <i class="fa fa-download mr-2"></i>下载
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Theme Card 2 -->
+            <div class="theme-card rounded-2xl overflow-hidden shadow-xl card-hover relative" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://pan.quark.cn/s/e0c9cda57416" target="_blank" class="block">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/4a39fb080aa04f16b42765cad253bf74.jpg~tplv-a9rns2rl98-24:720:720.image?lk3s=8e244e95&rcl=202603071736279E82E85D0897FE5A236E&rrcfp=8a172a1a&x-expires=1773480987&x-signature=xEJXg6cUnboVrVuN60HejxiPAMQ%3D" 
+                             alt="nova15动感绿pro" 
+                             class="w-full h-auto object-cover rounded-t-2xl">
+                        <div class="absolute inset-0 bg-gradient-overlay opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="glass-effect p-6 text-center">
+                        <h3 class="text-xl font-bold text-green-300">nova15动感绿pro</h3>
+                        <p class="mt-2 text-sm text-blue-100 opacity-80">点击下载主题</p>
+                        <div class="mt-4 inline-block bg-green-500/20 hover:bg-green-500/30 text-green-300 px-4 py-2 rounded-full text-sm transition-colors duration-300">
+                            <i class="fa fa-download mr-2"></i>下载
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Theme Card 3 -->
+            <div class="theme-card rounded-2xl overflow-hidden shadow-xl card-hover relative" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://pan.quark.cn/s/435bef5b15a7" target="_blank" class="block">
+                    <div class="relative overflow-hidden rounded-t-2xl">
+                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/0d73f124280249a399745e8fa5189b46.jpg~tplv-a9rns2rl98-24:720:720.image?lk3s=8e244e95&rcl=202603071736279E82E85D0897FE5A236E&rrcfp=8a172a1a&x-expires=1773480987&x-signature=k4VgswUpDe04YpECULa4aSqtFro%3D" 
+                             alt="星环OS" 
+                             class="w-full h-auto object-cover rounded-t-2xl">
+                        <div class="absolute inset-0 bg-gradient-overlay opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="glass-effect p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-300">星环OS</h3>
+                        <p class="mt-2 text-sm text-blue-100 opacity-80">点击下载主题</p>
+                        <div class="mt-4 inline-block bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 px-4 py-2 rounded-full text-sm transition-colors duration-300">
+                            <i class="fa fa-download mr-2"></i>下载
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-16" data-aos="fade-up" data-aos-delay="400">
+            <div class="glass-effect p-8 rounded-2xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-blue-300">主题特色</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center p-4">
+                        <div class="bg-blue-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-paint-brush text-2xl text-blue-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-200">精美设计</h3>
+                        <p class="mt-2 text-blue-100/80">专业设计师打造，每一个细节都精心雕琢</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="bg-blue-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-mobile text-2xl text-blue-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-200">完美适配</h3>
+                        <p class="mt-2 text-blue-100/80">针对UTS系统深度优化，确保最佳体验</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="bg-blue-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-refresh text-2xl text-blue-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-200">持续更新</h3>
+                        <p class="mt-2 text-blue-100/80">定期推送更新，带来全新视觉体验</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-8 px-4 text-center glass-effect mx-4 md:mx-8" data-aos="fade-up" data-aos-delay="500">
+        <p class="text-blue-200">© 2025 UTS Themes Store. 所有主题仅供个人使用</p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="text-blue-300 hover:text-blue-100 transition-colors">
+                <i class="fa fa-github text-xl"></i>
+            </a>
+            <a href="#" class="text-blue-300 hover:text-blue-100 transition-colors">
+                <i class="fa fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-blue-300 hover:text-blue-100 transition-colors">
+                <i class="fa fa-envelope text-xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS Animation Library
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Add click effects to theme cards
+            const themeCards = document.querySelectorAll('.theme-card');
+            themeCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    ripple.classList.add('absolute', 'bg-white/30', 'rounded-full', 'transform', 'scale-0', 'opacity-70', 'pointer-events-none');
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+        
+        // Add CSS for ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
